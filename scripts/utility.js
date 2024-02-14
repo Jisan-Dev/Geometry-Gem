@@ -3,3 +3,8 @@ const getInputValueById = (elmId) => {
   const value = parseFloat(valueText);
   return value;
 };
+
+const resetInputsById = (elemId) => {
+  const elem = document.getElementById(elemId);
+  elem.value = '';
+};
