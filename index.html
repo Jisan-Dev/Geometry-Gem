@@ -16,8 +16,8 @@
     <main>
       <div class="flex flex-col md:flex-row">
         <!-- Shape cards container -->
-        <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Triangle card -->
+        <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+          <!-- Triangle shape's card -->
           <div class="card bg-base-100 shadow-xl shadow-zinc-900 border-zinc-600 border-[1px]">
             <figure class="p-4">
               <img src="assests/images/triangle.png" alt="Triangle" />
@@ -41,13 +41,53 @@
                 <span>cm</span>
               </div>
               <div>
-                <p class="text-xl">
+                <p class="text-base">
                   Area: <span id="triangle-area" class="text-zinc-300">0</span>
                   <span class="text-lg">cm<sup>2</sup></span>
                 </p>
               </div>
               <div class="card-actions">
                 <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rectangle shape's card -->
+          <div class="card bg-base-100 shadow-xl shadow-zinc-900 border-zinc-600 border-[1px]"">
+            <figure class="p-4">
+              <img src="assests/images/rectangle.png" alt="rectangle shape"/>
+            </figure>
+            <div class="card-body p-4">
+              <h2 class="text-xl font-bold text-zinc-300 text-center">Rectangle!</h2>
+              <p class="text-center">Area (A) = w X I</p>
+              <div class="flex">
+                <!-- rectangle length -->
+                <input
+                  type="text"
+                  name=""
+                  id="rectangle-length"
+                  class="w-24 text-base p-2 rounded-sm"
+                  placeholder="Length" />
+                <span class="mr-4 ml-2">cm</span>
+                <!-- rectangle width -->
+                <input
+                  type="text"
+                  name=""
+                  id="rectangle-width"
+                  class="w-24 text-base p-2 rounded-sm"
+                  placeholder="width" />
+                <span>cm</span>
+              </div>
+              <div>
+                <p class="text-base">
+                  Area: <span id="rectangle-area" class="text-zinc-300">0</span>
+                  <span class="text-lg">cm<sup>2</sup> </span>
+                </p>
+              </div>
+              <div class="card-actions">
+                <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">
                   Calculate
                 </button>
               </div>
