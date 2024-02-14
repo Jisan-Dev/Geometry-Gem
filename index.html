@@ -61,7 +61,7 @@
             </figure>
             <div class="card-body p-4">
               <h2 class="text-xl font-bold text-zinc-300 text-center">Rectangle!</h2>
-              <p class="text-center">Area (A) = w X I</p>
+              <p class="text-center">Area (A) = w X l</p>
               <div class="flex">
                 <!-- rectangle length -->
                 <input
@@ -93,10 +93,50 @@
               </div>
             </div>
           </div>
+
+          <!-- Parallelogram shape's card -->
+          <div class="card bg-base-100 shadow-xl shadow-zinc-900 border-zinc-600 border-[1px]"">
+            <figure class="p-4 h-full ">
+              <img src="assests/images/parallelogram.png" alt="Parallelogram shape"/>
+            </figure>
+            <div class="card-body p-4">
+              <h2 class="text-xl font-bold text-zinc-300 text-center">Parallelogram!</h2>
+              <p class="text-center mb-4">Area (A) = b X h</p>
+              <div class="flex">
+                <!-- Parallelogram base -->
+                <input
+                  type="text"
+                  name=""
+                  id="parallelogram-base"
+                  class="w-24 text-base p-2 rounded-sm"
+                  placeholder="base" />
+                <span class="mr-4 ml-2">cm</span>
+                <!-- Parallelogram height -->
+                <input
+                  type="text"
+                  name=""
+                  id="parallelogram-height"
+                  class="w-24 text-base p-2 rounded-sm"
+                  placeholder="height" />
+                <span>cm</span>
+              </div>
+              <div>
+                <p class="text-base">
+                  Area: <span id="rectangle-area" class="text-zinc-300">0</span>
+                  <span class="text-lg">cm<sup>2</sup> </span>
+                </p>
+              </div>
+              <div class="card-actions">
+                <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Area calculation area  -->
-        <div class="w-96 border-2 border-gray-700 rounded-md">
+        <div class="w-96 border-2 border-gray-700 rounded-md ml-2">
           <h3>Area Calculation</h3>
         </div>
       </div>
