@@ -7,4 +7,6 @@ const calculateTriangleArea = () => {
 
   const triangleArea = 0.5 * trinagleBase * triangleHeight;
   document.getElementById('triangle-area').innerText = triangleArea;
+
+  insertHtml('Triangle', triangleArea);
 };
