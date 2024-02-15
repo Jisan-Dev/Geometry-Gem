@@ -133,6 +133,46 @@
               </div>
             </div>
           </div>
+
+          <!-- Rhombus shape's card -->
+          <div class="card bg-base-100 shadow-xl shadow-zinc-900 border-zinc-600 border-[1px]"">
+            <figure class="p-4 h-full ">
+              <img src="assests/images/rhombus.png" alt="Parallelogram shape"/>
+            </figure>
+            <div class="card-body p-4">
+              <h2 class="text-xl font-bold text-zinc-300 text-center">Rhombus!</h2>
+              <p class="text-center mb-4">Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+              <div class="flex">
+                <!-- Rhombus d1 -->
+                <input
+                  type="text"
+                  name=""
+                  id="rhombus-d1"
+                  class="w-24 text-base p-2 rounded-sm"
+                  placeholder="d1" />
+                <span class="mr-4 ml-2">cm</span>
+                <!-- Parallelogram height -->
+                <input
+                  type="text"
+                  name=""
+                  id="rhombus-d2"
+                  class="w-24 text-base p-2 rounded-sm"
+                  placeholder="d2" />
+                <span>cm</span>
+              </div>
+              <div>
+                <p class="text-base">
+                  Area: <span id="rhombus-area" class="text-zinc-300">0</span>
+                  <span class="text-lg">cm<sup>2</sup> </span>
+                </p>
+              </div>
+              <div class="card-actions">
+                <button onclick="calculateRhombusArea()" class="btn btn-primary w-full">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Area calculation area  -->
@@ -153,5 +193,6 @@
     <script src="scripts/triangle.js"></script>
     <script src="scripts/rectangle.js"></script>
     <script src="scripts/parallelogram.js"></script>
+    <script src="scripts/rhombus.js"></script>
   </body>
 </html>
