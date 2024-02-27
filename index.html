@@ -173,6 +173,46 @@
               </div>
             </div>
           </div>
+
+          <!-- Pentagon -->
+          <div class="card bg-base-100 shadow-xl shadow-zinc-900 border-zinc-600 border-[1px]"">
+            <figure class="p-4 h-full ">
+              <img src="assests/images/pentagon.png" alt="pentagon shape"/>
+            </figure>
+            <div class="card-body p-4">
+              <h2 class="text-xl font-bold text-zinc-300 text-center">Pentagon!</h2>
+              <p class="text-center mb-4">Area (A) = 0.5 X p X b</p>
+              <div class="flex">
+                <!-- pentagon p -->
+                <input
+                  type="text"
+                  name=""
+                  id="pentagon-p"
+                  class="w-24 text-base p-2 rounded-sm"
+                  placeholder="p" />
+                <span class="mr-4 ml-2">cm</span>
+                <!-- pentagon d -->
+                <input
+                  type="text"
+                  name=""
+                  id="pentagon-d"
+                  class="w-24 text-base p-2 rounded-sm"
+                  placeholder="d" />
+                <span>cm</span>
+              </div>
+              <div>
+                <p class="text-base">
+                  Area: <span id="pentagon-area" class="text-zinc-300">0</span>
+                  <span class="text-lg">cm<sup>2</sup> </span>
+                </p>
+              </div>
+              <div class="card-actions">
+                <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Area calculation area  -->
@@ -194,5 +234,6 @@
     <script src="scripts/rectangle.js"></script>
     <script src="scripts/parallelogram.js"></script>
     <script src="scripts/rhombus.js"></script>
+    <script src="scripts/pentagon.js"></script>
   </body>
 </html>
